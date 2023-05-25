@@ -12,8 +12,20 @@ y = 0
 mina_x = 0
 mina_y = 0
 generate_point = []
-bomb_x = random.randint(0, 4)
-bomb_y = random.randint(0, 4)
+mina_x = random.randint(0, 4)
+mina_y = random.randint(0, 4)
+
+math_logic= [
+                [+1,+0], 
+                [-1,+0], 
+                [+0, -1], 
+                [+0, +1], 
+                [+1, +1], 
+                [-1, -1], 
+                [+1, -1], 
+                [-1, +1], 
+               ]
+
 
 def generate_min ():
     global mina_x, mina_y
@@ -24,8 +36,14 @@ def generate_min ():
         if array[new_mina_x][new_mina_y] == "❌" and (new_mina_x, new_mina_y != x, y):
            array[new_mina_x][new_mina_y] = "💣"
            mina_x, mina_y = new_mina_x, new_mina_y
-           break
-    
+
+        for mine in math_logic:
+            if array[mina_x + mine[0]][mina_y + mine[1]] == '❌':
+                array[mina_x + mine[0]][mina_y + mine[1]] = "🟨";
+            elif array[mina_x + mine[0]][mina_y + mine[1]] == '🟨':
+                array[mina_x + mine[0]][mina_y + mine[1]] = "🟥";
+
+
 generate_min ()
 while not quit:
     for radek in array:
