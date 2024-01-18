@@ -140,9 +140,56 @@ i = 1
 
 triangl_1 (40)
 --------------------------------------------
-"""""""""
-
 def triangl_1(h):
     for i in range(1, h + 1):
         print(" "*(2*((h-i))), "000 "* (i*2 -1))
 triangl_1 (8)
+--------------------------------------------
+import math
+
+def o(r):
+
+    print(round(2*math.pi*r, 0))
+    r += 1
+    print(round(2*math.pi*r, 0))
+    return 
+print(o(6378e3))
+--------------------------------------------
+def money(days, initial_money):
+    den = 0 
+    while den < days:
+        print(den ,initial_money, "Kč")
+        den += 1
+        initial_money = initial_money * 2
+    
+    return den ,initial_money
+
+print( money(29, 0.01), "kč")
+--------------------------------------------
+
+"""""""""
+
+def najdi_pocet_lidi_a_koni(celkovy_pocet_hlav, celkovy_pocet_nohou):
+    lidi = 0
+
+    while True:
+        koni = celkovy_pocet_hlav - lidi
+        pocet_nohou = 2 * lidi + 4 * koni
+
+        if pocet_nohou == celkovy_pocet_nohou:
+            return lidi, koni
+
+        lidi += 1
+
+# Zadání
+celkovy_pocet_hlav = 22
+celkovy_pocet_nohou = 72
+
+# Hledání řešení
+pocet_lidi, pocet_koni = najdi_pocet_lidi_a_koni(celkovy_pocet_hlav, celkovy_pocet_nohou)
+pocet_nohou = pocet_lidi*2 + pocet_koni*4
+# Výsledky
+print(f"Počet lidí: {pocet_lidi}")
+print(f"Počet koní: {pocet_koni}")
+print(f"Počet nohou: {pocet_nohou}")
+
