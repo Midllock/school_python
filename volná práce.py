@@ -33,7 +33,7 @@ print(numbers)
 --------------------------------------------
 n = 7
 for i in range (1, 11):
-    print(i, "x", n, "=", i * n)
+    print(i, "x", n, "=", i * n) 
 --------------------------------------------
 import math
 player = [2,5]
@@ -41,7 +41,7 @@ enemy = [3,3]
 a = (player[0]- enemy [0])
 b = (player[1]- enemy [1])
 c = math.sqrt(a**2 + b**2)
-print(c)
+print(c) #pithágorova věta
 --------------------------------------------
 znamky = [[3, 1], [3, 2], [3, 1], [10, 3], [4, 4]]
 
@@ -61,7 +61,7 @@ rozdil = vazeny_prumer - nevažený_průměr
 print(f"Celkový vážený průměr: {vazeny_prumer}")
 print(f"Celkový nevážený průměr: {nevažený_průměr}")
 print(f"Rozdíl mezi průměry: {rozdil}")
-import random
+import random  #vážený průměr, nevážený průměr, rozdíl
 --------------------------------------------
 w, h, mines = 8, 2, 2
 
@@ -70,7 +70,7 @@ field = [[0 for y in range(h)]for y in range(w)]
 
 #put mine
 rx = random.randint(0,w - 1)
-ry = random.randint(0, h -1)
+ry = random.randint(0, h -1) #bomby
 --------------------------------------------
 for y in range(h):
     for x in range(w):
@@ -94,7 +94,7 @@ else:
 def card_hide(card):
     return 12* "*" + card[12:]
 
-print(card_hide("1565411565415321"))
+print(card_hide("1565411565415321")) #schování čísla účtu
 --------------------------------------------
 x = float(input("Váha:"))
 y = float(input("Výška:"))
@@ -115,14 +115,14 @@ elif z < 39.9:
 elif z > 39.9:
     print ("obezita 3. stupně")
 
-print(z)
+print(z) #nadváha a podváha
 -------------------------------------------- #19.12
 def zahada(x):
     return x//2
 
 a = zahada(8)
 b = zahada(6)
-print(a+b)
+print(a+b) #sčítání blbostí
 ------
 def test(x,y,z):
     print(y)
@@ -138,12 +138,12 @@ i = 1
     for i in range(1, h + 1):
         print(" "*(h-i), "A"* (i*2 -1))
 
-triangl_1 (40)
+triangl_1 (40) #tringl čísla
 --------------------------------------------
 def triangl_1(h):
     for i in range(1, h + 1):
         print(" "*(2*((h-i))), "000 "* (i*2 -1))
-triangl_1 (8)
+triangl_1 (8) #-II-
 --------------------------------------------
 import math
 
@@ -153,7 +153,7 @@ def o(r):
     r += 1
     print(round(2*math.pi*r, 0))
     return 
-print(o(6378e3))
+print(o(6378e3)) #kruh + 1 metr
 --------------------------------------------
 def money(days, initial_money):
     den = 0 
@@ -164,11 +164,8 @@ def money(days, initial_money):
     
     return den ,initial_money
 
-print( money(29, 0.01), "kč")
+print( money(29, 0.01), "kč") #vypočíta co se vyplatí víc jestli jeden den tisíc korun beo každý den od prvního dne *2 do 30 dní
 --------------------------------------------
-
-"""""""""
-
 def najdi_pocet_lidi_a_koni(celkovy_pocet_hlav, celkovy_pocet_nohou):
     lidi = 0
 
@@ -191,5 +188,8 @@ pocet_nohou = pocet_lidi*2 + pocet_koni*4
 # Výsledky
 print(f"Počet lidí: {pocet_lidi}")
 print(f"Počet koní: {pocet_koni}")
-print(f"Počet nohou: {pocet_nohou}")
+print(f"Počet nohou: {pocet_nohou}") #pocítání hlav a nohou
+"""""""""
+
+
 
