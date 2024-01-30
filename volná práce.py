@@ -155,7 +155,7 @@ def o(r):
     return 
 print(o(6378e3))
 --------------------------------------------
-def money(days, initial_money):
+def money(days, initial_money): #počítání peněz
     den = 0 
     while den < days:
         print(den ,initial_money, "Kč")
@@ -166,9 +166,6 @@ def money(days, initial_money):
 
 print( money(29, 0.01), "kč")
 --------------------------------------------
-
-"""""""""
-
 def najdi_pocet_lidi_a_koni(celkovy_pocet_hlav, celkovy_pocet_nohou):
     lidi = 0
 
@@ -192,4 +189,13 @@ pocet_nohou = pocet_lidi*2 + pocet_koni*4
 print(f"Počet lidí: {pocet_lidi}")
 print(f"Počet koní: {pocet_koni}")
 print(f"Počet nohou: {pocet_nohou}")
-
+--------------------------------------------
+import math #pithágorova věta
+player = [2,5]
+enemy = [3,3]
+a = (player[0]- enemy [0])
+b = (player[1]- enemy [1])
+c = math.sqrt(a**2 + b**2)
+print(c) 
+--------------------------------------------
+"""""""""
