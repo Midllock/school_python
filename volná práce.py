@@ -7,7 +7,8 @@ for n in numbers:
 
 print ("Suma je ", sum)
 print ("počet je", len(numbers))
-print  ("Průměr je", sum/len(numbers)) #aritme
+print  ("Průměr je", sum/len(numbers)) 
+#aritme
 
 --------------------------------------------
 
@@ -16,7 +17,8 @@ cnt= 0
 for n in numbers:
     if n % 2 == 0:
         cnt += 1
-print ("pocet =", cnt) #sudý
+print ("pocet =", cnt) 
+#sudý
 --------------------------------------------
 numbers = (4,5,3,7,8,2,1,6) 
 cnt= 0
@@ -197,5 +199,5 @@ a = (player[0]- enemy [0])
 b = (player[1]- enemy [1])
 c = math.sqrt(a**2 + b**2)
 print(c) 
---------------------------------------------
-"""""""""
+#konec 30.1
+""""""""" 
