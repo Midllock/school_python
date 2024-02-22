@@ -200,4 +200,53 @@ b = (player[1]- enemy [1])
 c = math.sqrt(a**2 + b**2)
 print(c) 
 #konec 30.1
+
+import random
+w, h, mines = 5, 3, 2
+
+field = [[0 for y in range(h)]for y in range(w)]
+if mines >w * h:
+    mines = 0
+    print("Error: Too many mines.")
+cnt = 0
+for i in range(mines):
+    cnt += 1
+    while True:
+        rx = random.randint(0,w - 1)
+        ry = random.randint(0, h -1)
+        if field[rx][ry] != "M":
+            field[rx][ry] = "M"
+            break
+for y in range(h):
+        for x in range(w):
+            if field[x][y] == "M":
+                print("Mina na [{},{}]".format(x,y))
+                nx = x - 1
+                ny = y - 1
+                if nx>= 0 and ny>= 0 and ny>= field[nx][ny] != "M":
+                    field[nx][ny] +=1
+
+                nx = x
+                ny = y - 1
+                if ny >= 0 and ny>= field[nx][ny] != "M":
+                    field[nx][ny] +=1
+for y in range(h):
+    for x in range (w):
+        print(field[x][y], end="")
+    print()
+-----------------------
+import random
+colors = ("A", "B", "C", "D")
+values = ("1", "2","3","4", "5", "6", "7", "8","9","10", "J", "Q", "K")
+deck = []
+for color in colors:
+    for value in values:
+         deck.append(color + value)
+         random.shuffle(deck)
+print(deck.pop())
+print(deck.pop())
+print(deck)
+print(len(deck), "karet")
+
 """"""""" 
+print("KOKOTE, "*1000000)
