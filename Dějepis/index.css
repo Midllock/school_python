@@ -1,96 +1,196 @@
-body, html{
-    background-color: rgb(166, 112, 11);
-}
-a{
-    text-decoration: none;
-}
-.main_text{
-    font-weight: bold;
-    position: absolute;
-    background-color: white;
-    border-radius: 10px;
-    padding: 8px;
-    left: 36%;
-    font-size: 30px;
-    top: 8%;
-}
-.up_text_life{
-    position: absolute;
-    background-color: white;
-    font-weight: bold;
-    border-radius: 10px;
-    padding: 5px;
-    top: 20%;
-    left: 24%;
-    font-size: 20px;
-}
-.life{
-    position: absolute;
-    background-color: white;
-    left: 9%;
-    top: 25%;
-    border-radius: 10px;
-    padding: 8px;
-    font-size: 17px;
-    text-align: center;
-}
-.first_main_text{
-    position: absolute;
-    background-color: white;
-    font-weight: bold;
-    border-radius: 10px;
-    padding:5px;
-    top:20%;
-    left: 65%;
-    font-size: 20px;
-}
-.first_text{
-    position: absolute;
-    background-color: white;
-    border-radius: 10px;
-    padding:5px;
-    top:28%;
-    left: 50%;
-    font-size: 17px;
-    text-align: center; 
-}
-.maps{
-    position: absolute;
-    background-color: white;
-    font-weight: bold;
-    border-radius: 10px;
-    padding:5px;
-    top:60%;
-    left: 20%;
-    font-size: 18px;
-}
-.maps_text{
-    position: absolute;
-    background-color: white;
-    border-radius: 10px;
-    padding:5px;
-    top:65%;
-    left: 9%;
-    font-size: 17px;
-    text-align: center; 
-}
-.back_up{
-    position: absolute;
-    background-color: white;
-    font-weight: bold;
-    border-radius: 10px;
-    padding:5px;
-    top:46%;
-    left: 67%;
-    font-size: 18px;
-}
-.back_text{
-    position: absolute;
-    background-color: white;
-    border-radius: 10px;
-    padding:5px;
-    top:51%;
-    left: 56%;
-    font-size: 17px;
-    text-align: center; 
-}
+    body, html{
+        background-color: rgb(166, 112, 11);
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .main_text{
+        font-weight: bold;
+        position: absolute;
+        background-color: white;
+        border-radius: 10px;
+        padding: 8px;
+        left: 36%;
+        font-size: 30px;
+        top: 8%;
+    }
+    .up_text_life{
+        position: absolute;
+        background-color: white;
+        font-weight: bold;
+        border-radius: 10px;
+        padding: 5px;
+        top: 20%;
+        left: 24%;
+        font-size: 20px;
+    }
+    .life{
+        position: absolute;
+        background-color: white;
+        left: 9%;
+        top: 25%;
+        border-radius: 10px;
+        padding: 8px;
+        font-size: 17px;
+        text-align: center;
+    }
+    .first_main_text{
+        position: absolute;
+        background-color: white;
+        font-weight: bold;
+        border-radius: 10px;
+        padding:5px;
+        top:20%;
+        left: 65%;
+        font-size: 20px;
+    }
+    .first_text{
+        position: absolute;
+        background-color: white;
+        border-radius: 10px;
+        padding:5px;
+        top:28%;
+        left: 50%;
+        font-size: 17px;
+        text-align: center; 
+    }
+    .maps{
+        position: absolute;
+        background-color: white;
+        font-weight: bold;
+        border-radius: 10px;
+        padding:5px;
+        top:60%;
+        left: 20%;
+        font-size: 18px;
+    }
+    .maps_text{
+        position: absolute;
+        background-color: white;
+        border-radius: 10px;
+        padding:5px;
+        top:65%;
+        left: 9%;
+        font-size: 17px;
+        text-align: center; 
+    }
+    .back_up{
+        position: absolute;
+        background-color: white;
+        font-weight: bold;
+        border-radius: 10px;
+        padding:5px;
+        top:46%;
+        left: 67%;
+        font-size: 18px;
+    }
+    .back_text{
+        position: absolute;
+        background-color: white;
+        border-radius: 10px;
+        padding:5px;
+        top:51%;
+        left: 56%;
+        font-size: 17px;
+        text-align: center; 
+    }
+    .hawai{
+        position: absolute;
+        top: 69%;
+        right: 8%;
+        height: 400px;
+        width: 600px;
+    }
+    .last_round_up{
+        position: absolute;
+        background-color: white;
+        font-weight: bold;
+        border-radius: 10px;
+        padding:5px;
+        top:85%;
+        left: 22%;
+        font-size: 19px;
+    }
+    .last_round_text{
+        position: absolute;
+        background-color: white;
+        border-radius: 10px;
+        padding:5px;
+        top:90%;
+        left: 5%;
+        font-size: 17px;
+        text-align: center; 
+    }
+    .galery_up{
+        position: absolute;
+        background-color: white;
+        font-weight: bold;
+        border-radius: 10px;
+        padding:5px;
+        top:125%;
+        left: 22%;
+        font-size: 19px;
+    }
+    .galery_text{
+        position: absolute;
+        background-color: white;
+        border-radius: 10px;
+        padding:5px;
+        top: 130%;
+        left: 8%;
+        font-size: 17px;
+        text-align: center; 
+    }
+    .information{
+        position: absolute;
+        top:130%;
+        right: 25%;
+        background-color: white;
+        font-weight: bold;
+        border-radius: 10px;
+        padding:5px;
+        font-size: 19px;
+    }
+    .information_web{
+        position: absolute;
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+        padding:5px;
+        top: 136%;
+        right: 14%;
+        font-size: 17px;
+        text-align: center; 
+    }
+    .information_web_1{
+        position: absolute;
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+        padding:5px;
+        top: 140%;
+        right: 12%;
+        font-size: 17px;
+        text-align: center; 
+    }
+    .information_web_2{
+        position: absolute;
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+        padding:5px;
+        top: 144%;
+        right: 182px;
+        font-size: 17px;
+        text-align: center; 
+    }
+    .end{
+        position: absolute;
+        top: 155%;
+        background-color: white;
+        border-radius: 10px;
+        padding:5px;
+        right: 32%;
+        font-size: 20px;
+    }
