@@ -249,4 +249,6 @@ print(deck)
 print(len(deck), "karet")
 
 """"""""" 
-print("KOKOTE, "*1000000)
+"KONEC 27.02.2024 nový s"
+
+
