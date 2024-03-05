@@ -26,7 +26,7 @@ def generate_burger():
     while True:
         new_burger_x = random.randint(0, 4)
         new_burger_y = random.randint(0, 4)
-        if array[new_burger_x][new_burger_y] == "🥝" and (new_burger_x, new_burger_y != x, y):
+        if array[new_burger_x][new_burger_y] == "🥝" and (new_burger_x, new_burger_y != x, y) and array[new_burger_x][new_burger_y] != "🍔":
             array[new_burger_x][new_burger_y] = "🍔"
             burger_x, burger_y = new_burger_x, new_burger_y
             break

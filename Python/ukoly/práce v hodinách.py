@@ -13,9 +13,6 @@ obsah = math.pi * polomer ** 2
 print("Obsah kruhu je:", obsah, "cm^2")
 
 -----------------------------------
-
-"""""""""
-
 kone= int(input("Zadejte počet koní: "))
 clovek = int(input("Zadejte počet lidi: "))
 ovci= int(input("Zadejte počet ovci: "))
@@ -46,3 +43,9 @@ def kalkulacka():
     print("Výsledek:", vysledek)
 
 kalkulacka()
+"""""""""
+with open("mess.txt", "r") as file:
+    text = file.read()
+    #text = text.replace("a", "o")
+    #text = text.replace("e", "i")
+print(text)

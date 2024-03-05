@@ -249,6 +249,7 @@ print(deck)
 print(len(deck), "karet")
 
 """"""""" 
-"KONEC 27.02.2024 nový s"
+"KONEC 27.02.2024 nový soubor práce v hodinách.py"
+
 
 
