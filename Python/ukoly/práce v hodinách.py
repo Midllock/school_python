@@ -46,6 +46,4 @@ kalkulacka()
 """""""""
 with open("mess.txt", "r") as file:
     text = file.read()
-    #text = text.replace("a", "o")
-    #text = text.replace("e", "i")
 print(text)
