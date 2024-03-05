@@ -1,4 +1,4 @@
-"""""""""
+""""""""" 
 import math
 
 # Definice poloměru
@@ -12,9 +12,15 @@ print("Obvod kruhu je:", obvod, "cm")
 obsah = math.pi * polomer ** 2
 print("Obsah kruhu je:", obsah, "cm^2")
 
------------------------------------
+#Tohle vypočítá obsah a obejm kruhu
 
-"""""""""
+kone= int(input("Zadejte počet koní: ")) #Zjistí počet koní
+clovek = int(input("Zadejte počet lidi: "))#Zjistí počet lidí
+ovci= int(input("Zadejte počet ovci: "))#Zjistí počet ovci
+nohy = 0
+
+print ("Dohromady mají", clovek*2 +ovci*4 + kone*4, "nohou")
+#Toto nám vypíše končný počet nohou všech dohromady
 
 kone= int(input("Zadejte počet koní: "))
 clovek = int(input("Zadejte počet lidi: "))
@@ -22,13 +28,15 @@ ovci= int(input("Zadejte počet ovci: "))
 nohy = 0
 
 print ("Dohromady mají", clovek*2 +ovci*4 + kone*4, "nohou")
-
-def kalkulacka():
+""""""""" 
+def kalkulacka(): #tento kód je základní kalkulačka
     cislo1 = float(input("Zadej prvni cislo: "))
     cislo2 = float(input("Zadej druhe cislo: "))
+    #zadání čísel
     
     operace = input("Zadej operaci (+, -, *, /): ")
-    
+    #zadání operace
+
     if operace == '+':
         vysledek = cislo1 + cislo2
     elif operace == '-':
@@ -45,4 +53,4 @@ def kalkulacka():
     
     print("Výsledek:", vysledek)
 
-kalkulacka()
+print(kalkulacka())
