@@ -43,7 +43,19 @@ def kalkulacka():
     print("Výsledek:", vysledek)
 
 kalkulacka()
-"""""""""
+----------------------------- #otevření souborů
 with open("mess.txt", "r") as file:
     text = file.read()
 print(text)
+----------------
+import json
+with open("grid.json", "r") as file:
+    grid = json.load(file)
+
+print(grid)
+"""""""""
+import json
+with open("grid.json", "r") as file:
+    grid = json.load(file)
+
+print(grid)
