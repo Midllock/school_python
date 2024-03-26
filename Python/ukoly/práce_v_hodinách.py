@@ -44,18 +44,42 @@ def kalkulacka():
 
 kalkulacka()
 ----------------------------- #otevření souborů
-with open("mess.txt", "r") as file:
-    text = file.read()
-print(text)
-----------------
+# Otevření souboru 
+message.txtwith open("message.txt", "r") as file:
+    plaintext = file.read()
+    
+# Caesarova šifra
+def caesar_cipher(text, shift):
+    result = ""
+    for char in text:
+        if char.islower():
+            result += chr((ord(char) - 97 + shift) % 26 + 97)
+        elif char.isupper():  
+            result += chr((ord(char) - 65 + shift) % 26 + 65)
+        elif char.isnumeric():
+            result += chr((ord(char) - 48 + shift) % 10 + 48)
+        else:            
+            result += char    
+    return result
+
+ciphertext = caesar_cipher(plaintext, 3)
+
+# Uložení zašifrované zprávy do souboru message_.txtwith 
+open("message_.txt", "w") as file:
+    file.write(ciphertext)
+----------------#otevření souboru json, a přečtení
 import json
 with open("grid.json", "r") as file:
     grid = json.load(file)
 
 print(grid)
+------------------
+
 """""""""
-import json
-with open("grid.json", "r") as file:
-    grid = json.load(file)
+class Dog:
+    def __init__(self, name):
+        self.name = name
+        print(f"Vytváříme objekt psa s jménem {self.name}") 
 
-print(grid)
+    def info(self):
+        print(f"{self.name} štěká!")
