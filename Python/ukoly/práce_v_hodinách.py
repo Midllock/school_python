@@ -76,10 +76,4 @@ print(grid)
 ------------------
 
 """""""""
-class Dog:
-    def __init__(self, name):
-        self.name = name
-        print(f"Vytváříme objekt psa s jménem {self.name}") 
 
-    def info(self):
-        print(f"{self.name} štěká!")
