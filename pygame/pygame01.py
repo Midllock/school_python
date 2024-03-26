@@ -1,6 +1,6 @@
 import pygame
 
-# Nastavení okna
+# Nastavení
 pygame.init()
 width, height = 800, 600
 screen = pygame.display.set_caption("Geometrické tvary")
