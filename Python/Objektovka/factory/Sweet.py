@@ -45,18 +45,21 @@ class Factory:
         for s in self.__sweets:
             print(f"{s.getKindOf()} {s.getTypeOf()}")
 
-    def make (self, kind_of, type_of):
+    def make (self, kind_of, type_of, amount=1):
         if kind_of == "Pralines":
-            self.__sweets.append(Pralines(type_of))
+            for i in range(0, amount):
+                self.__sweets.append(Pralines(type_of))
         elif kind_of == "Truffles":
-            self.__sweets.append(Truffles(type_of))
+            for i in range(0, amount):
+                self.__sweets.append(Truffles(type_of))
         elif kind_of == "Chocolate":
-            self.__sweets.append(Chocolate(type_of))
+            for i in range(0, amount):
+                self.__sweets.append(Chocolate(type_of))
 
 sweets=Factory()
-sweets.make("Pralines", "chocolate")
+sweets.make("Pralines", "chocolate", 3)
 sweets.make("Truffles", "nougat")
-sweets.make("Chocolate", "salted caramel")
+sweets.make("Chocolate", "salted caramel", 6)
 rum = Pralines("rum")
 sweets.showProducts()
 sweets.showDetails()
