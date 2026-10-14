@@ -6,7 +6,7 @@ class Graph:
 
     def add_edge(self, u: int, v: int, weight: int = 1) -> None:
         """Nastaví orientovanou hranu z uzlu u do uzlu v s danou vahou."""
-        if 0 <= u < self.n and 0 <= v < self.n:
+        if 0 <= u < self.n and 0 <= v < self.n: 
             self.matrix[u][v] = weight
         else:
             print(f"Chyba: Neplatný index uzlu ({u} nebo {v})!")
